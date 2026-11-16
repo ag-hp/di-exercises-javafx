@@ -1,0 +1,39 @@
+package com.adam.demo;
+
+
+import javafx.application.Application;
+import javafx.geometry.Pos;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.stage.Stage;
+import static javafx.application.Application.launch;
+
+public class FlowPaneButton extends Application {
+    private static Scene scene;;
+
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+
+        FlowPaneButton root = new FlowPaneButton();
+        root.setHgap(10); // Espacio horizontal entre botones
+        root.setVgap(10); // Espacio vertical entre botones
+
+        Button[] btn = new Button[10];
+
+        // Recorremos el array para crear los 10 botones
+        for (int i = 0; i < btn.length; i++) {
+            btn[i] = new Button("Botón " + (i + 1));
+        }
+
+        root.getChildren().addAll(btn);
+        root.setAlignment(Pos.CENTER);
+
+        scene = new Scene(root, 500, 300);
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    }
+
+    public static void main(String[] args) {
+        launch();
+    }
+}
