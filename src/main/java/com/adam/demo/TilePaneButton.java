@@ -18,10 +18,17 @@ public class TilePaneButton extends Application {
         TilePane root = new TilePane();
         root.setHgap(10);
         root.setVgap(10);
+
         // Propiedades exclusivas del TilePane:
         root.setPrefColumns(3);             // Forzar 3 columnas preferidas
         root.setPrefTileWidth(130);         // Que cada celda mida exactamente 130px de ancho
         root.setPrefTileHeight(50);         // Que cada celda mida exactamente 50px de alto
+
+        // Centra el bloque de la cuadrícula en el medio de la ventana
+        root.setAlignment(Pos.CENTER);
+
+        // Centra el contenido (texto) dentro de cada celda individual
+        root.setTileAlignment(Pos.CENTER);
 
         Button[] btn = new Button[10];
 
@@ -30,10 +37,6 @@ public class TilePaneButton extends Application {
         }
 
         root.getChildren().addAll(btn);
-
-        // Centra el contenido (el botón/texto) dentro de la celda del TilePane
-        root.setTileAlignment(Pos.CENTER);
-
 
         scene = new Scene(root, 500, 300);
         primaryStage.setScene(scene);
