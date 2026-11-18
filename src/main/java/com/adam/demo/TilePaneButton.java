@@ -9,7 +9,7 @@ import javafx.scene.layout.TilePane;
 import javafx.stage.Stage;
 
 public class TilePaneButton extends Application {
-    private static Scene scene;;
+    private static Scene scene;
 
     @Override
     public void start(Stage primaryStage) throws Exception {
