@@ -8,7 +8,7 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.TilePane;
 import javafx.stage.Stage;
 
-public class TilePaneButton extends Application {
+public class AppTilePane extends Application {
     private static Scene scene;
 
     @Override

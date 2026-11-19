@@ -9,7 +9,7 @@ import javafx.scene.layout.FlowPane;
 import javafx.stage.Stage;
 import static javafx.application.Application.launch;
 
-public class FlowPaneButton extends Application {
+public class AppFlowPane extends Application {
     private static Scene scene;;
 
     @Override

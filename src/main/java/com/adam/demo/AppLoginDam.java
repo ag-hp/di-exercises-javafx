@@ -14,7 +14,7 @@ import javafx.stage.Stage;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LoginDam extends Application {
+public class AppLoginDam extends Application {
     private static Scene scene;
 
     @Override
