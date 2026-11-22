@@ -19,25 +19,25 @@ public class AppCalculadora extends Application {
     public void start(Stage primaryStage) throws Exception {
         // Pantalla superior
         TextField display = new TextField("2");
-        display.setEditable(false);
         display.setAlignment(Pos.CENTER_RIGHT);
 
         // Botones
+        // Fila 1
         Button btn7 = new Button("7");
         Button btn8 = new Button("8");
         Button btn9 = new Button("9");
         Button btnSum = new Button("+");
-
+        // Fila 2
         Button btn4 = new Button("4");
         Button btn5 = new Button("5");
         Button btn6 = new Button("6");
         Button btnRes = new Button("-");
-
+        // Fila 3
         Button btn1 = new Button("1");
         Button btn2 = new Button("2");
         Button btn3 = new Button("3");
         Button btnMul = new Button("x");
-
+        // Fila 4
         Button btnC = new Button("C");
         Button btn0 = new Button("0");
         Button btnIgual = new Button("=");
