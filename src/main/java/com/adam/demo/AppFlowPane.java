@@ -16,8 +16,8 @@ public class AppFlowPane extends Application {
     public void start(Stage primaryStage) throws Exception {
 
         FlowPane root = new FlowPane();
-        root.setHgap(10); // Espacio horizontal entre botones
-        root.setVgap(10); // Espacio vertical entre botones
+        root.setHgap(10); // Espacio horizontal
+        root.setVgap(10); // Espacio vertical
 
         Button[] btn = new Button[10];
 

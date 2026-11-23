@@ -22,7 +22,7 @@ public class AppGridPane extends Application {
 
         Button btnGuardar = new Button("Guardar");
 
-        // Coordenadas: (nodo, columna, fila)
+        // (nodo, columna, fila)
         root.add(lblEmail, 0, 0);
         root.add(txtEmail, 1, 0);
         root.add(btnGuardar, 1, 1);
