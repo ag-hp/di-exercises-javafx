@@ -58,6 +58,7 @@ public class AppCalculadora extends Application {
 
         // Creación de la escena y carga en el Stage
         scene = new Scene(root, 300, 250);
+        stage.setTitle("JavaFX Calculator");
         stage.setScene(scene);
         stage.show();
     }
