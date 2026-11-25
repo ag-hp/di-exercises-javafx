@@ -4,15 +4,12 @@ import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.layout.Border;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class App extends Application {
+public class AppBorderPane extends Application {
     private static Scene scene;
 
     @Override
@@ -41,7 +38,6 @@ public class App extends Application {
         bt3.setMaxHeight(Double.MAX_VALUE);
         BorderPane.setMargin(bt3, new Insets(5, 5, 5, 5));
 
-
         Button bt4 = new Button("Articulo");
         root.setLeft(bt4);
         bt4.setMaxHeight(Double.MAX_VALUE);
@@ -52,7 +48,6 @@ public class App extends Application {
         bt5.setMaxWidth(Double.MAX_VALUE);
         bt5.setMaxHeight(Double.MAX_VALUE);
         BorderPane.setMargin(bt5, new Insets(5, 5, 5, 5));
-
 
         // AÑADE AQUÍ LOS OTROS CUATRO BOTONES: CENTER, BOTTOM, RIGHT y LEFT
         scene = new Scene(root, 300,250);
