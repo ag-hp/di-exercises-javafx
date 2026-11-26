@@ -1,6 +1,5 @@
 package com.adam.demo;
 
-
 import javafx.application.Application;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -34,9 +33,8 @@ public class AppTilePane extends Application {
 
         for (int i = 0; i < btn.length; i++) {
             btn[i] = new Button("Botón nº" + (i + 1));
+            root.getChildren().add(btn[i]);
         }
-
-        root.getChildren().addAll(btn);
 
         scene = new Scene(root, 500, 300);
         primaryStage.setScene(scene);
