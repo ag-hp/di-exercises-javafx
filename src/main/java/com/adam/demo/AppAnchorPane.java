@@ -18,38 +18,37 @@ public class AppAnchorPane extends Application {
         AnchorPane root = new AnchorPane();
         root.setStyle("-fx-background-color: tan;");
 
-        // 1. Barra superior (de izquierda a derecha)
+        // 1. Barra superior
         Button bt1 = new Button();
         bt1.setStyle("-fx-background-color: darkolivegreen;");
         bt1.setPrefHeight(50);
-        AnchorPane.setTopAnchor(bt1, 0.0);
+        bt1.setLayoutY(0.0);
         AnchorPane.setLeftAnchor(bt1, 0.0);
         AnchorPane.setRightAnchor(bt1, 0.0);
 
-        // 2. Caja izquierda (debajo del encabezado, se estira dejando espacio a la derecha)
+        // 2. Cuadrado izquierdo
         Button bt2 = new Button();
         bt2.setStyle("-fx-background-color: mediumaquamarine;");
         bt2.setPrefHeight(110);
-        AnchorPane.setTopAnchor(bt2, 50.0);
+        bt2.setLayoutY(50.0);
         AnchorPane.setLeftAnchor(bt2, 0.0);
         AnchorPane.setRightAnchor(bt2, 120.0);
 
-        // 3. Botón inferior (centrado down)
+        // 3. Botón inferior (centrado con HBox)
         Button bt3 = new Button();
         bt3.setStyle("-fx-background-color: cornflowerblue;");
         bt3.setPrefWidth(100);
         bt3.setPrefHeight(35);
 
-        HBox down = new HBox(bt3);
-        down.setAlignment(Pos.CENTER);
-        AnchorPane.setBottomAnchor(down, 0.0);
-        AnchorPane.setLeftAnchor(down, 0.0);
-        AnchorPane.setRightAnchor(down, 0.0);
+        HBox panelBoton = new HBox(15, bt3);
+        panelBoton.setAlignment(Pos.CENTER);
+        AnchorPane.setBottomAnchor(panelBoton, 0.0);
+        AnchorPane.setLeftAnchor(panelBoton, 0.0);
+        AnchorPane.setRightAnchor(panelBoton, 0.0);
 
-        // Lo añadimos entero al panel
-        root.getChildren().addAll(bt1, bt2, down);
+        root.getChildren().addAll(bt1, bt2, panelBoton);
 
-        Scene scene = new Scene(root, 240, 420);
+        scene = new Scene(root, 240, 420);
         primaryStage.setScene(scene);
         primaryStage.show();
     }
